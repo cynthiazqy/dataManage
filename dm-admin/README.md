@@ -1,7 +1,8 @@
 # dm-admin
 
 ```
-基于vue + vuex + vue-router + typescript + webpack + eslint + prettier + jest的项目架子
+基于vue + vuex + vue-router + typescript + webpack + jest 项目框架
+基于eslint + prettier + husky + lint-staged 规范代码 & 统一开发风格
 ```
 
 ## Project setup
