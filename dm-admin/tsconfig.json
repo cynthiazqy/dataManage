@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 编译输出目标 ES 版本
+    "module": "esnext", // 采用的模块系统
+    "strict": true, // 以严格模式解析
+    "jsx": "preserve",
+    "noImplicitAny": true, // 在表达式和声明上有隐含的any类型时报错
+    "strictNullChecks": true, // 控制null和undefined在每种类型中是否被允许
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true, // 启用装饰器
+    "esModuleInterop": true,
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "emitDecoratorMetadata": true, // 启用设计类型元数据（用于反射）
+    "noEmitOnError": true,
+    "allowJs": true, // 允许编译javascript文件
+    "noEmit": false,
+    "sourceMap": true, // 是否包含可以用于 debug 的 sourceMap
+    "baseUrl": ".", // 解析非相对模块名的基准目录
+    "types": ["node", "webpack-env"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["src/**/*", "types"],
+  "exclude": ["node_modules", "build"]
+}
