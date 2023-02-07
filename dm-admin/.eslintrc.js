@@ -35,6 +35,12 @@ module.exports = {
         args: 'after-used',
         ignoreRestSiblings: false
       }
+    ],
+    'vue/multi-word-component-names': [
+      'off', // 'error'
+      {
+        ignores: []
+      }
     ]
   }
 };
