@@ -1,20 +1,21 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div id="app">
-    <h1>vue2项目</h1>
-    <Hello />
+    <Home />
+    <!-- 根级路由出口 -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import Hello from './pages/hello/index.vue';
+import Home from '@/views/Home';
 
 export default {
   name: 'App',
   components: {
-    Hello
-
+    Home
   }
-}
+};
 </script>
 
 <style>

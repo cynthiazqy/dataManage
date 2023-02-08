@@ -17,7 +17,7 @@
     "allowJs": true, // 允许编译javascript文件
     "noEmit": false,
     "sourceMap": true, // 是否包含可以用于 debug 的 sourceMap
-    "baseUrl": ".", // 解析非相对模块名的基准目录
+    "baseUrl": "./", // 解析非相对模块名的基准目录
     "types": ["node", "webpack-env"],
     "paths": {
       "@/*": ["src/*"]

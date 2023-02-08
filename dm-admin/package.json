@@ -7,9 +7,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "npm run lint:js",
-    "lint:js": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src",
     "format": "prettier --write \"src/**/*.ts\", \"src/**/*.vue\"",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "lint:js": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src"
   },
   "husky": {
     "hooks": {
@@ -22,11 +22,20 @@
       "eslint --fix",
       "git add"
     ],
-    "**/*.{js,jsx,ts,tsx}": "npm run lint:js  "
+    "**/*.{js,jsx,ts,tsx,vue}": "npm run lint:js  "
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "element-ui": "^2.15.12",
+    "node-sass": "^8.0.0",
+    "sass": "^1.58.0",
+    "sass-loader": "^13.2.0",
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.1.0",
+    "vuex-module-decorators": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -38,6 +47,7 @@
     "@vue/cli-plugin-typescript": "^5.0.8",
     "@vue/cli-service": "^5.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",

@@ -3,8 +3,7 @@
  * 所以需要在项目根目录添加此文件，添加以下代码，来让ts识别vue文件
  */
 
-import Vue from 'vue';
-
-declare module '*.vue' {
-  export default Vue;
-}
+// declare module '*.vue' {
+//   import Vue from 'vue';
+//   export default Vue;
+// }
