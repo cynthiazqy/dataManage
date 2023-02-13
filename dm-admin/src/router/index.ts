@@ -11,16 +11,24 @@ Vue.use(ElementUI);
 const routes = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
     component: () => import('@/views/Home/index.vue')
     // meta: { title: '首页' }
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: () => import('@/views/Login/index.vue'),
-    meta: { title: '登录' }
+    path: '/layout',
+    name: 'Layout',
+    component: () => import('@/views/Layout/index.vue')
   }
+
+  // {
+  //   path: '/login',
+  //   name: 'Login',
+  //   component: () => import('@/views/Login/index.vue')
+  // }
 ];
 
 const router = new VueRouter({
@@ -29,7 +37,8 @@ const router = new VueRouter({
 
 // todo使用钩子函数对路由进行权限跳转
 // router.beforeEach((to: any, from: any, next: any) => {
-//   document.title = `${to.meta.title} || 数据管理平台`;
+//   // document.title = `${to.meta.title} || 数据管理平台`;
+//   document.title = '数据管理平台';
 //   const role = localStorage.getItem('user_data');
 
 //   if (!role && to.path !== '/login') {

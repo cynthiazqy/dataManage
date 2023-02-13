@@ -3,22 +3,31 @@
     <h2 class="indexPage1">
       首页
     </h2>
+
     <h3 class="indexPage">
       title
     </h3>
-    <el-button type="primary">
+    <el-button
+      type="primary"
+      @click="jumpTo"
+    >
       默认按钮
     </el-button>
   </div>
 </template>
 
-<script lang="ts">
+<script src>
 export default {
   components: {},
   data() {
     return {
-      hh: 'kkk'
+      // hh: 'kkk'
     };
+  },
+  methods: {
+    jumpTo() {
+      this.$router.push('/layout');
+    }
   }
 };
 </script>

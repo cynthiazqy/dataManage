@@ -8,7 +8,7 @@
 </template>
 
 <script>
-// import Home from '@/views/Home';
+// import Home from './views/Home';
 
 export default {
   name: 'App',
@@ -16,7 +16,8 @@ export default {
     // Home
   },
   created() {
-    if (this.$route.path !== '/login') this.$router.push('/login');
+    // this.$router.push('/')
+    // if (this.$route.path !== '/login') this.$router.push('/login');
   }
 };
 </script>

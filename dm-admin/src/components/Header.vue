@@ -170,7 +170,7 @@ export default {
     handleLogout() {
       this.$_user.logout().finally(() => {
         this.userService.removeUser();
-        this.$router.push('/login');
+        // this.$router.push('/login');
       });
     }
   }
