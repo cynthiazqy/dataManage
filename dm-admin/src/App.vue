@@ -1,30 +1,28 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <div id="app">
-    <Home />
+    <!-- <Home /> -->
     <!-- 根级路由出口 -->
     <router-view />
   </div>
 </template>
 
 <script>
-import Home from '@/views/Home';
+// import Home from '@/views/Home';
 
 export default {
   name: 'App',
   components: {
-    Home
+    // Home
+  },
+  created() {
+    if (this.$route.path !== '/login') this.$router.push('/login');
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  overflow-x: hidden;
 }
 </style>

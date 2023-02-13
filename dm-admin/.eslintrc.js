@@ -21,7 +21,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': [
-      'error',
+      'off', // error
       {
         singleQuote: true,
         parser: 'flow'
@@ -54,6 +54,8 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-explicit-any': 0,
     'vue/attributes-order': 0,
-    'vue/html-self-closing': 0
+    'vue/html-self-closing': 0,
+    '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/ban-types': 0
   }
 };
